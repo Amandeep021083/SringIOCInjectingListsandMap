@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="person" class="com.springioc.injectinglistsandmap.beans.Person">
+
+		<property name="cars">
+			<list>
+				<value>Renault Duster</value>
+				<value>Vitara Brezza</value>
+			</list>
+		</property>
+
+		<property name="details">
+			<map>
+				<entry key="cost" value="400000000"></entry>
+				<entry key="model" value="2019"></entry>
+			</map>
+		</property>
+	</bean>
+</beans>
